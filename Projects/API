@@ -1,0 +1,20 @@
+#!/usr/bin/python3.6
+import requests
+import os
+
+
+def renewToken():
+    vaultURL = 'https://vault.kumar.com/v1/auth/token/renew-self'
+    vaultToken = os.getenv('vault_key_ops')
+    print(vaultToken)
+    headers = {'x-vault-token': vaultToken}
+    out = requests.post(vaultURL, headers=headers)
+    print(out.text)
+    return out.status_code
+
+
+if __name__ == '__main__':
+    if renewToken() == 200:
+        print('Token renewed')
+    else:
+        print('There is an issue in token renewal')
