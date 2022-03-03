@@ -65,6 +65,10 @@ Key       Value
 ---       -----
 kummar    xxxxxx
 
-
+```
 PS C:\Users\> .\vault.exe kv delete secret/kumar1 
 Success! Data deleted (if it existed) at: secret/kumar1
+```
+```
+PS C:\Users\krajak111\Desktop\Terrform_new\vault_1.9.3_windows_amd64> .\vault.exe kv undelete -versions=1 secret/kumar1 
+Success! Data written to: secret/undelete/kumar1
