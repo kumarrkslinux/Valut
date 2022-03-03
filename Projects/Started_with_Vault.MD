@@ -77,3 +77,28 @@ Success! Data written to: secret/undelete/kumar1
 PS C:\Users\> .\vault.exe kv destroy -versions=1 secret/kumar1 
 Success! Data written to: secret/destroy/kumar1
 ```
+```
+PS C:\Users> .\vault.exe kv metadata get secret/kumar1
+========== Metadata ==========
+Key                     Value
+---                     -----
+cas_required            false
+created_time            2022-03-03T11:35:32.5673645Z
+current_version         1
+custom_metadata         <nil>
+delete_version_after    0s
+max_versions            0
+oldest_version          0
+updated_time            2022-03-03T11:35:32.5673645Z
+
+====== Version 1 ======
+Key              Value
+---              -----
+created_time     2022-03-03T11:35:32.5673645Z
+deletion_time    n/a
+destroyed        true
+```
+
+```
+PS C:\Users>  .\vault.exe kv metadata delete secret/kumar1 
+Success! Data deleted (if it existed) at: secret/metadata/kumar1
