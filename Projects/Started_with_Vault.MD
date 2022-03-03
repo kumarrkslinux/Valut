@@ -64,3 +64,7 @@ version            1
 Key       Value
 ---       -----
 kummar    xxxxxx
+
+
+PS C:\Users\> .\vault.exe kv delete secret/kumar1 
+Success! Data deleted (if it existed) at: secret/kumar1
