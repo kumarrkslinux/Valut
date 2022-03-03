@@ -6,3 +6,33 @@
 - Take the Root Token: s.xxxxxxxxxxxxxxxxxxxxxx from the output
 - Browse it http://127.0.0.1:8200 and use the Root token for login
 
+# secret 
+1. PS C:\Users\>  .\vault.exe status
+Key             Value
+---             -----
+Seal Type       shamir
+Initialized     true
+Sealed          false
+Total Shares    1
+Threshold       1
+Version         1.9.3
+Storage Type    inmem
+Cluster Name    vault-cluster-3215cd1d
+Cluster ID      c66d0936-a55c-5870-8040-b2b332c6d6a3
+HA Enabled      false
+
+2. PS C:\Users\> .\vault.exe kv get secret/kumar
+======= Metadata =======
+Key                Value
+---                -----
+created_time       2022-03-03T11:25:22.4564842Z
+custom_metadata    <nil>
+deletion_time      n/a
+destroyed          false
+version            1
+
+==== Data ====
+Key      Value
+---      -----
+kumar    xxxxxx
+
