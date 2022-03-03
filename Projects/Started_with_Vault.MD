@@ -49,3 +49,18 @@ deletion_time      n/a
 destroyed          false
 version            1
 ```
+```
+PS C:\Users\krajak111\Desktop\Terrform_new\vault_1.9.3_windows_amd64> .\vault.exe kv get secret/kumar1
+======= Metadata =======
+Key                Value
+---                -----
+created_time       2022-03-03T11:35:32.5673645Z
+custom_metadata    <nil>
+deletion_time      n/a
+destroyed          false
+version            1
+
+===== Data =====
+Key       Value
+---       -----
+kummar    xxxxxx
