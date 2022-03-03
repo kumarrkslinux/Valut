@@ -50,7 +50,7 @@ destroyed          false
 version            1
 ```
 ```
-PS C:\Users\krajak111\Desktop\Terrform_new\vault_1.9.3_windows_amd64> .\vault.exe kv get secret/kumar1
+PS C:\Users> .\vault.exe kv get secret/kumar1
 ======= Metadata =======
 Key                Value
 ---                -----
