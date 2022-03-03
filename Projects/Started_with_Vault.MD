@@ -38,3 +38,14 @@ Key      Value
 ---      -----
 kumar    xxxxxx
 ```
+
+```
+PS C:\Users$ .\vault.exe kv put secret/kumar1 kummar=admin011
+Key                Value
+---                -----
+created_time       2022-03-03T11:35:32.5673645Z
+custom_metadata    <nil>
+deletion_time      n/a
+destroyed          false
+version            1
+```
