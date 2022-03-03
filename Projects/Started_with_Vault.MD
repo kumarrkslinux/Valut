@@ -73,3 +73,7 @@ Success! Data deleted (if it existed) at: secret/kumar1
 PS C:\Users\ .\vault.exe kv undelete -versions=1 secret/kumar1 
 Success! Data written to: secret/undelete/kumar1
 ```
+```
+PS C:\Users\> .\vault.exe kv destroy -versions=1 secret/kumar1 
+Success! Data written to: secret/destroy/kumar1
+```
