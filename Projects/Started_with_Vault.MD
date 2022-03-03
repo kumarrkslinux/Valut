@@ -7,7 +7,8 @@
 - Browse it http://127.0.0.1:8200 and use the Root token for login
 
 # secret 
-1. PS C:\Users\>  .\vault.exe status
+```
+PS C:\Users\>  .\vault.exe status
 Key             Value
 ---             -----
 Seal Type       shamir
@@ -20,7 +21,8 @@ Storage Type    inmem
 Cluster Name    vault-cluster-3215cd1d
 Cluster ID      c66d0936-a55c-5870-8040-b2b332c6d6a3
 HA Enabled      false
-
+```
+```
 2. PS C:\Users\> .\vault.exe kv get secret/kumar
 ======= Metadata =======
 Key                Value
@@ -35,4 +37,4 @@ version            1
 Key      Value
 ---      -----
 kumar    xxxxxx
-
+```
