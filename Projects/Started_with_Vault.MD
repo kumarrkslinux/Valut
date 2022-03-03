@@ -74,7 +74,7 @@ PS C:\Users\ .\vault.exe kv undelete -versions=1 secret/kumar1
 Success! Data written to: secret/undelete/kumar1
 ```
 ```
-PS C:\Users\> .\vault.exe kv destroy -versions=1 secret/kumar1 
+PS C:\Users\> .\vault.exe kv destroy -versions=1 secret/kumar1   --- < it will remove all the secret 
 Success! Data written to: secret/destroy/kumar1
 ```
 ```
@@ -101,4 +101,4 @@ destroyed        true
 
 ```
 PS C:\Users>  .\vault.exe kv metadata delete secret/kumar1 
-Success! Data deleted (if it existed) at: secret/metadata/kumar1
+Success! Data deleted (if it existed) at: secret/metadata/kumar1  -- > it will remove all the versions 
